@@ -1,0 +1,222 @@
+<IndexSearch />
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <p class="lead">
+        Топ пропозицій
+      </p>
+      <ul class="list-group">
+        {{#each this.model as |gameUnit|}}
+          <TopProposals @game={{gameUnit}} />
+        {{/each}}
+      </ul>
+      <div class="container mt-3">
+        <div class="row">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">
+                    «
+                  </span>
+                  <span class="sr-only">
+                    Previous
+                  </span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  1
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  2
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  3
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  4
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  5
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  6
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  7
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  8
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">
+                    »
+                  </span>
+                  <span class="sr-only">
+                    Next
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <p class="lead">
+        Останні пропозиції
+      </p>
+      <ul class="list-group">
+        {{#each this.model as |gameUnit|}}
+          <TopProposals @game={{gameUnit}} />
+        {{/each}}
+      </ul>
+      <div class="container mt-3">
+        <div class="row">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">
+                    «
+                  </span>
+                  <span class="sr-only">
+                    Previous
+                  </span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  1
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  2
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  3
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  4
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  5
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  6
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  7
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  8
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">
+                    »
+                  </span>
+                  <span class="sr-only">
+                    Next
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+  <p class="lead">
+    Пройдені ігри
+  </p>
+  <table class="table">
+    <thead>
+      <tr align="center">
+        <th scope="col">
+          Жанр
+        </th>
+        <th scope="col">
+          Гра
+        </th>
+        <th scope="col">
+          Відео / Запис стріму
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr align="center">
+        <td>
+          Жах
+        </td>
+        <td>
+          Shrek 1
+        </td>
+        <td>
+          <a href="https://www.youtube.com/watch?v=lfwo_n99CF4">
+            https://www.youtube.com/watch?v=lfwo_n99CF4
+          </a>
+        </td>
+      </tr>
+      <tr align="center">
+        <td>
+          Дічь
+        </td>
+        <td>
+          Thornton
+        </td>
+        <td>
+          <a href="https://www.youtube.com/watch?v=lfwo_n99CF4">
+            https://www.youtube.com/watch?v=lfwo_n99CF4
+          </a>
+        </td>
+      </tr>
+      <tr align="center">
+        <td>
+          Преколи
+        </td>
+        <td>
+          the Bird
+        </td>
+        <td>
+          <a href="https://www.youtube.com/watch?v=lfwo_n99CF4">
+            https://www.youtube.com/watch?v=lfwo_n99CF4
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
