@@ -11,11 +11,15 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build",
+    "build": "brinstall && ember build -prod",
+    "build:dev": "bower install &&ember build -dev",
+    "build:test": "ember build -test",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "brinstall": "npm run bowerreinstall",
+    "bowerreinstall": "rm -rf bower_components/ && bower install"
   },
   "devDependencies": {
     "@ember/jquery": "^0.6.0",

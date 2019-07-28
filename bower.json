@@ -1,0 +1,21 @@
+{
+  "name": "wtp",
+  "description": "Small description for wtp goes here",
+  "main": "",
+  "authors": [
+    "Ihor Ostapchuk <iostapchyk@chegg.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ServiceRock/what-to-play-service",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "popper.js": "^1.15.0"
+  }
+}
