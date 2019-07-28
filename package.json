@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "npm run brinstall && ember build -prod",
-    "build:dev": "bower install &&ember build -dev",
+    "build:dev": "bower install && ember build -dev",
     "build:test": "ember build -test",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
@@ -25,6 +25,7 @@
     "@ember/jquery": "^0.6.0",
     "@ember/optional-features": "^0.7.0",
     "@fortawesome/ember-fontawesome": "^0.1.14",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/free-regular-svg-icons": "^5.9.0",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
@@ -55,7 +56,10 @@
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^9.0.1",
     "eslint-plugin-prettier": "^3.1.0",
+    "express": "^4.17.1",
+    "glob": "^4.5.3",
     "loader.js": "^4.7.0",
+    "morgan": "^1.9.1",
     "prettier": "^1.18.2",
     "qunit-dom": "^0.8.4"
   },

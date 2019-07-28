@@ -1,4 +1,4 @@
-<IndexSearch />
+<IndexSearch items=model.games key="name" model="game" />
 <div class="container mt-4">
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-6">
@@ -85,7 +85,7 @@
       </p>
       <ul class="list-group">
         {{#each this.model as |gameUnit|}}
-          <TopProposals @game={{gameUnit}} />
+          <LastProposals @game={{gameUnit}} />
         {{/each}}
       </ul>
       <div class="container mt-3">
@@ -163,60 +163,62 @@
   <p class="lead">
     Пройдені ігри
   </p>
-  <table class="table">
-    <thead>
-      <tr align="center">
-        <th scope="col">
-          Жанр
-        </th>
-        <th scope="col">
-          Гра
-        </th>
-        <th scope="col">
-          Відео / Запис стріму
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr align="center">
-        <td>
-          Жах
-        </td>
-        <td>
-          Shrek 1
-        </td>
-        <td>
-          <a href="https://www.youtube.com/watch?v=lfwo_n99CF4">
-            https://www.youtube.com/watch?v=lfwo_n99CF4
-          </a>
-        </td>
-      </tr>
-      <tr align="center">
-        <td>
-          Дічь
-        </td>
-        <td>
-          Thornton
-        </td>
-        <td>
-          <a href="https://www.youtube.com/watch?v=lfwo_n99CF4">
-            https://www.youtube.com/watch?v=lfwo_n99CF4
-          </a>
-        </td>
-      </tr>
-      <tr align="center">
-        <td>
-          Преколи
-        </td>
-        <td>
-          the Bird
-        </td>
-        <td>
-          <a href="https://www.youtube.com/watch?v=lfwo_n99CF4">
-            https://www.youtube.com/watch?v=lfwo_n99CF4
-          </a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-responsive">
+    <table class="table col-sm-12 table-bordered table-striped table-condensed cf">
+      <thead>
+        <tr align="center">
+          <th scope="col">
+            Жанр
+          </th>
+          <th scope="col">
+            Гра
+          </th>
+          <th scope="col">
+            Відео / Запис стріму
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr align="center">
+          <td>
+            Жах
+          </td>
+          <td>
+            Shrek 1
+          </td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=lfwo_n99CF4">
+              https://www.youtube.com/watch?v=lfwo_n99CF4
+            </a>
+          </td>
+        </tr>
+        <tr align="center">
+          <td>
+            Дічь
+          </td>
+          <td>
+            Thornton
+          </td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=lfwo_n99CF4">
+              https://www.youtube.com/watch?v=lfwo_n99CF4
+            </a>
+          </td>
+        </tr>
+        <tr align="center">
+          <td>
+            Преколи
+          </td>
+          <td>
+            the Bird
+          </td>
+          <td>
+            <a href="https://www.youtube.com/watch?v=lfwo_n99CF4">
+              https://www.youtube.com/watch?v=lfwo_n99CF4
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
