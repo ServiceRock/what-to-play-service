@@ -1,7 +1,6 @@
-# wtp
+# wtp - Front-end: What to play
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
 
 ## Prerequisites
 
@@ -14,7 +13,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/ServiceRock/what-to-play-service.git` this repository
 * `cd wtp`
 * `npm install`
 
