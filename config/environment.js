@@ -71,6 +71,23 @@ module.exports = function(environment) {
 
 		ENV.torii.providers['google-oauth2'] = {
 			apiKey: '473312347142-h5shc2qj1pru7plp00e3th3mcv3abjrt.apps.googleusercontent.com',
+			redirectUri: 'http://localhost:4200/oauth2callback',
+			tokenExchangeUri: 'http://localhost:1337/oauth/callback'
+		};
+	}
+
+	if (environment === 'stage') {
+		// ENV.APP.LOG_RESOLVER = true;
+		// ENV.APP.LOG_ACTIVE_GENERATION = true;
+		// ENV.APP.LOG_TRANSITIONS = true;
+		// ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+		// ENV.APP.LOG_VIEW_LOOKUPS = true;
+		ENV['ember-cli-mirage'] = {
+			enabled: false
+		};
+
+		ENV.torii.providers['google-oauth2'] = {
+			apiKey: '473312347142-h5shc2qj1pru7plp00e3th3mcv3abjrt.apps.googleusercontent.com',
 			redirectUri: 'https://test-what-to-play.herokuapp.com/oauth2callback',
 			tokenExchangeUri: 'https://test-what-to-play-api.herokuapp.com/oauth/callback'
 		};
