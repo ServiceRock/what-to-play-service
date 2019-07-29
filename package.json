@@ -17,7 +17,7 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test",
+    "test": "npm run brinstall && ember test",
     "brinstall": "npm run bowerreinstall",
     "bowerreinstall": "rm -rf bower_components/ && bower install"
   },
