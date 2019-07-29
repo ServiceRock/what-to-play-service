@@ -1,8 +1,8 @@
 import Component from '@ember/component';
-import Ember from 'ember';
+import { inject } from '@ember/service';
 
 export default Component.extend({
-	store: Ember.inject.service(), // we will use Ember.store for search
+	store: inject(), // we will use Ember.store for search
 	foundItems: null, // we need to store found items
 
 	findItem(value) {
