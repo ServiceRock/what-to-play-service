@@ -11,7 +11,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "npm run brinstall && ember build -prod",
+    "build": "npm run brinstall && ./build.sh",
     "build:dev": "bower install && ember build -dev",
     "build:test": "ember build -test",
     "lint:hbs": "ember-template-lint .",
