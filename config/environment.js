@@ -35,7 +35,7 @@ module.exports = function(environment) {
 				'google-oauth2': {
 					apiKey: '473312347142-h5shc2qj1pru7plp00e3th3mcv3abjrt.apps.googleusercontent.com',
 					redirectUri: 'https://what-to-play.herokuapp.com/oauth2callback',
-					tokenExchangeUri: 'https://what-to-play-api.herokuapp.com//oauth/callback'
+					tokenExchangeUri: 'https://what-to-play-api.herokuapp.com/oauth/callback'
 				}
 			}
 		}
