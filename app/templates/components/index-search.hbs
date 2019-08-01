@@ -5,21 +5,8 @@
       key-up="keyUp"
       placeholder="Введіть назву гри"
       class="search-field"
-     />
+     >
 
     <div class="focus-background"></div>
   </div>
-</div>
-<div class="autocomplete-input">
-  {{#each items as |item|}}
-    <span class="selected-item" {{action "remove" item}}>
-      {{output-value item key}}
-    </span>
-  {{/each}}
-  {{input type="text" key-up="keyUp"}}
-  {{#each foundItems as |item|}}
-    <span class="found-item" {{action "add" item}}>
-      {{output-value item key}}
-    </span>
-  {{/each}}
 </div>

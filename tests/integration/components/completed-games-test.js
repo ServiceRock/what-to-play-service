@@ -4,23 +4,17 @@ import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Component | completed-games', function(hooks) {
-  setupRenderingTest(hooks);
+	setupRenderingTest(hooks);
 
-  test('it renders', async function(assert) {
-    // Set any properties with this.set('myProperty', 'value');
-    // Handle any actions with this.set('myAction', function(val) { ... });
+	test('it renders', async function(assert) {
+		// Set any properties with this.set('myProperty', 'value');
+		// Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<CompletedGames />`);
+		await render(hbs`<CompletedGames />`);
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <CompletedGames>
-        template block text
-      </CompletedGames>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
-  });
+		assert.snapshot(
+			this.element, // Value to snapshot
+			'<IndexSearch/> component with no parameters'
+		);
+	});
 });

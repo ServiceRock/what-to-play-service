@@ -13,7 +13,7 @@ module('Acceptance | proposals list', function(hooks) {
 
 	test('should show last proposals at the home page', async function(assert) {
 		await visit('/');
-		assert.equal(this.element.querySelectorAll('.listing').length, 3, 'should display 3 listings');
+		assert.equal(this.element.querySelectorAll('.top-proposals div').length, 7, 'should display 7 listings');
 	});
 
 	test('should show search at the home page', async function(assert) {

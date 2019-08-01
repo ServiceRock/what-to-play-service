@@ -1,11 +1,11 @@
-<IndexSearch items=model.games key="name" model="game" />
+<IndexSearch items="model.games" key="name" model="game" />
 <div class="container mt-4">
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-6">
       <p class="lead">
         Топ пропозицій
       </p>
-      <ul class="list-group">
+      <ul class="list-group top-proposals">
         {{#each this.model as |gameUnit|}}
           <TopProposals @game={{gameUnit}} />
         {{/each}}
