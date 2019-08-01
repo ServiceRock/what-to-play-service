@@ -1,1 +1,1 @@
-if [ ${ENVIRONMENT} ]; then echo "started ember build -${ENVIRONMENT}" && ember build --environment=${ENVIRONMENT}; else echo "started ember build -prod" && ember build -prod; fi
+if [ ${ENVIRONMENT} ]; then echo "started ember build --environment=${ENVIRONMENT}" && ember build --environment=${ENVIRONMENT}; else echo "started ember build --environment=production" && ember build -prod; fi
