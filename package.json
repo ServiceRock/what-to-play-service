@@ -61,7 +61,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "express": "^4.17.1",
     "glob": "^4.5.3",
-    "googleapis": "^41.0.1",
+    "googleapis": "^166.0.0",
     "loader.js": "^4.7.0",
     "morgan": "^1.9.1",
     "prettier": "^1.18.2",
